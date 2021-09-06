@@ -761,6 +761,25 @@ fieldset{
     .main-content__clients{
         display: none;
     }
+    
+    .modal__body{
+        overflow-x: hidden !important;
+    }
+    .modal__title{
+        font-size: 1.5rem !important;
+    }
+    .modal-body__title{
+        font-size: 15px !important;
+    }
+    .modal-body__name, 
+    .modal-body__tel, 
+    .modal-body__site{
+        padding-right: 80px !important;
+    }
+    .btn-send{
+        padding: 16px 3rem;
+        max-width: 400px;
+    }
 }
 
 
@@ -815,6 +834,25 @@ fieldset{
     }
     .main-content__clients{
         display: none;
+    }
+    .modal__title{
+        font-size: 1.3rem !important;
+    }
+    .modal__body{
+        padding-left: 25px !important;
+    }
+    .modal-body__title{
+        font-size: 14px !important;
+    }
+    .modal-body__name, 
+    .modal-body__tel, 
+    .modal-body__site{
+        padding-right: 50px !important;
+        padding: 12px 24px;
+    }
+    .btn-send{
+        padding: 12px 2rem;
+        max-width: 400px;
     }
 }
 
@@ -873,6 +911,28 @@ fieldset{
     }
     .main-content__clients{
         display: none;
+    }
+    .modal__header{
+        padding-left: 25px !important;
+    }
+    .modal__title{
+        font-size: 1.2rem !important;
+    }
+    .modal__body{
+        padding-left: 25px !important;
+    }
+    .modal-body__title{
+        font-size: 14px !important;
+    }
+    .modal-body__name, 
+    .modal-body__tel, 
+    .modal-body__site{
+        padding-right: 30px !important;
+        padding: 10px 24px;
+    }
+    .btn-send{
+        padding: 12px 0.8rem;
+        max-width: 400px;
     }
 }
 
@@ -933,4 +993,39 @@ fieldset{
     .main-content__clients{
         display: none;
     }
+    .modal__title{
+        font-size: 1rem !important;
+    }
+    .modal__header {
+        padding-left: 15px !important;
+    }
+    .modal__body{
+        padding-left: 15px !important;
+    }
+    .modal-body__title{
+        font-size: 12px !important;
+        margin-top: 0.5rem;
+        line-height: 1.2rem;
+    }
+    fieldset {
+        margin-bottom: 0.7rem !important;
+    }
+    .modal-body__name, 
+    .modal-body__tel, 
+    .modal-body__site{
+        padding-right: 72px !important;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    .modal__agree-text{
+        font-size: 8px;
+    }
+    .btn-send{
+        padding: 10px 1rem;
+        font-size: 14px;
+    }
+    .modal__footer {
+        padding-bottom: 2rem !important;
+    }
+
 }
