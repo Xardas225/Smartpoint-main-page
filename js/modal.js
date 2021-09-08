@@ -21,7 +21,7 @@ $modal = function (options) {
     function _createModal(options) {
         var
             elemModal = document.createElement('div'),
-            modalTemplate = '<div class="modal__backdrop" data-dismiss="modal"><form id="modal_form" method="post" enctype="multipart/form-data"><div class="modal__content"><div class="modal__header"><div class="modal__title" data-modal="title">{{title}}</div><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span></div><div class="modal__body" data-modal="content">{{content}}</div>{{footer}}</div></form></div>',
+            modalTemplate = '<div class="modal__backdrop" data-dismiss="modal"><form id="form" method="post" enctype="multipart/form-data"><div class="modal__content"><div class="modal__header"><div class="modal__title" data-modal="title">{{title}}</div><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span></div><div class="modal__body" data-modal="content">{{content}}</div>{{footer}}</div></form></div>',
             modalFooterTemplate = '<div class="modal__footer">{{buttons}}</div>',
             modalButtonTemplate = '<button type="button" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
             modalHTML,
@@ -95,14 +95,17 @@ $modal = function (options) {
 
 let modal = $modal({
     title: 'Подключите SMARTPOINT.PRO',
-    content: '<p class="modal-body__title">Оставьте контакты, наш специалист расскажет, как легко внедрить сервис на ваш сайт. </p> <fieldset><input placeholder="Введите ваше имя" id="name*" type="text" class="modal-body__name"></input></fieldset><fieldset><input placeholder="Введите ваш телефон*" id="tel" type="tel"class="modal-body__tel"></input></fieldset><fieldset><input placeholder="Адрес сайта*" id="site" type="text" class="modal-body__site"></input></fieldset><div class="modal__agree"><input type="checkbox" name="agree" id="agree" checked="checked"></input><label class="modal__agree-text">Оставляя свои персональные данные, Вы даёте добровольное согласие на их обработку*</label></div>',
+    content: '<p class="modal-body__title">Оставьте контакты, наш специалист расскажет, как легко внедрить сервис на ваш сайт. </p> <fieldset><input placeholder="Введите ваше имя" id="name" type="text" class="modal-body__name"></input></fieldset><fieldset><input placeholder="Введите ваш телефон*" id="tel" type="tel" class="modal-body__tel"></input></fieldset><fieldset><input placeholder="Адрес сайта*" id="site" type="text" class="modal-body__site"></input></fieldset><div class="modal__agree"><input type="checkbox" name="agree" id="agree" checked="checked"></input><label class="modal__agree-text">Оставляя свои персональные данные, Вы даёте добровольное согласие на их обработку*</label></div>',
     footerButtons: [
-        { class: 'btn-send', text: 'Оставить бесплатную заявку', handler: 'modalHandlerOk' }
+        { class: 'btn-send', text: 'Оставить бесплатную заявку', handler: 'modalHandlerOk', type: 'submit' }
     ]
 });
 
-let modalButton = document.querySelector('.main-content__button-yellow');
+// $('.btn-send').prop('type', 'submit')
 
-modalButton.addEventListener('click', () => {
-    modal.show();
-})
+
+// let modalButton = document.querySelector('.main-content__button-yellow');
+
+// modalButton.addEventListener('click', () => {
+//     modal.show();
+// })

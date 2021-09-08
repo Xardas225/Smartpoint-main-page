@@ -1,4 +1,3 @@
-// Меняю 
 let parent = document.querySelector('.main-content');
 let buttons = document.querySelector('.main-content__buttons');
 let image = document.querySelector('.main-image');
@@ -10,7 +9,10 @@ if (window.innerWidth < 770) {
 
 if (window.innerWidth < 420 && window.innerHeight > 700) {
     document.querySelector('.main-image').style.display = 'block';
-    document.querySelector('.main-image').style.marginLeft = '3rem';
 }
 
 
+
+document.querySelector('.main-content__button-yellow').addEventListener('click', () => {
+    smp_active_205644();
+});
