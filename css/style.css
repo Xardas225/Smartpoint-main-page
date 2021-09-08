@@ -800,8 +800,10 @@ fieldset{
     }
     .main-content{
         padding-top: 20px;
+        margin-left: 0;
     }
     .main-content__title{
+        text-align: center;
         font-size: 24px;
         line-height: 34px;
         max-width: none;
@@ -809,14 +811,14 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__text{
-        font-size: 16px;
+        text-align: center;
+        font-size: 21px;
         line-height: 26px;
         max-width: none;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .main-image{
-        display: none;
-        margin-left: 4rem;
+        margin-left: 1.5rem;
     }
     .main-image__pic{
         max-width: 200px;
@@ -831,8 +833,8 @@ fieldset{
     }
     .main-content__button{
         max-width: 100%;
-        padding: 0.7rem 4rem;
-        font-size: 16px;
+        padding: 0.7rem 5rem;
+        font-size: 18px;
     }
     .main-content__button-last{
         margin-left: 0px;
@@ -865,7 +867,7 @@ fieldset{
 
 @media (max-width: 400px) {
     .container{
-        padding: 0 20px;
+        padding: 0 15px;
     }
     body{
         overflow: scroll;
@@ -878,26 +880,28 @@ fieldset{
     }
     .main-content{
         padding-top: 20px;
+        margin-left: 0px;
     }
     .main-content__title{
-        font-size: 28px;
-        line-height: 36px;
+        text-align: center;
+        font-size: 23px;
+        line-height: 32px;
         max-width: none;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         margin-bottom: 20px;
     }
     .main-content__text{
-        font-size: 20px;
-        line-height: 28px;
+        text-align: center;
+        font-size: 19px;
+        line-height: 24px;
         max-width: none;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     .main-image{
-        display: none;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
     .main-image__pic{
-        max-width: 200px;
+        max-width: 175px;
     } 
     .main-content__buttons{
         flex-direction: column;
@@ -961,10 +965,10 @@ fieldset{
         padding-top: 20px;
     }
     .main-content__title{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 19px;
+        line-height: 28px;
         max-width: none;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         margin-bottom: 20px;
     }
     .main-content__text{
@@ -973,11 +977,8 @@ fieldset{
         max-width: none;
         margin-bottom: 20px;
     }
-    .main-image{
-        display: none;
-    }
     .main-image__pic{
-        max-width: 200px;
+        max-width: 130px;
     } 
     .main-content__buttons{
         flex-direction: column;
@@ -986,12 +987,11 @@ fieldset{
         order: 2;
         margin: 0 auto;
         margin-bottom: 20px;
-        margin-left: -10px;
     }
     .main-content__button{
         max-width: 100%;
         padding: 0.5rem 3rem;
-        font-size: 14px;
+        font-size: 16px;
     }
     .main-content__button-last{
         margin-left: 0px;

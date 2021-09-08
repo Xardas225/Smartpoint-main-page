@@ -1,18 +1,19 @@
 let parent = document.querySelector('.main-content');
-let buttons = document.querySelector('.main-content__buttons');
+let title = document.querySelector('.main-content__title');
 let image = document.querySelector('.main-image');
+let text = document.querySelector('.main-content__text')
 
 if (window.innerWidth < 770) {
-    parent.insertBefore(image, buttons);
+    parent.insertBefore(image, title);
 }
 
 
-if (window.innerWidth < 420 && window.innerHeight > 700) {
-    document.querySelector('.main-image').style.display = 'block';
+if (window.innerWidth < 500) {
+    text.textContent = 'Протестируйте 10 дней и убедитесь лично в эффективности сервиса.';
 }
 
 
 
-document.querySelector('.main-content__button-yellow').addEventListener('click', () => {
-    smp_active_205644();
-});
+// document.querySelector('.main-content__button-yellow').addEventListener('click', () => {
+//     smp_active_205644();
+// });
