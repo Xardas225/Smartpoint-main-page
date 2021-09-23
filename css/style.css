@@ -34,9 +34,7 @@ body{
     max-width: 220px;
     max-height: 72px;
 }
-.main-content__clients{
-    display: none !important;
-}
+
 .main__inner{
     display: flex;
     justify-content: space-between;
@@ -86,15 +84,15 @@ body{
 .main-content__button{
     font-family: "Proxima Nova Lt";
     font-weight: normal;
-    max-width: 400px;
+    max-width: 500px;
     color: #fff;
     font-weight: 600;
     font-size: 29px;
-    line-height: 35px;
+    line-height: 29px;
     background-color: transparent;
     border: 1.5px solid #fff;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 70px;
     position: relative;
     text-align: center;
 }
@@ -176,83 +174,6 @@ body{
 }
 
 
-/* Модальное окно */
-.modal__content{
-    font-family: 'Proxima Nova Lt';
-}
-.modal__header{
-    border-bottom: none !important;
-    padding-left: 40px !important;
-    padding-bottom: 0px !important;
-}
-.modal__title {
-    line-height: 1.5rem;
-    font-size: 1.6rem !important;
-    font-weight: 600 !important;
-    margin-top: 1rem !important;
-}
-.modal__btn-close {
-    font-size: 38px !important;
-    font-weight: 500 !important;
-}
-.modal__body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px !important;
-    padding-top: 0px !important;
-}
-.modal__body > label {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-
-.modal-body__title{
-    margin-top: 1rem;
-    line-height: 1.8rem;
-    margin-bottom: 10px;
-    color: #4F4F4F;
-    max-width: 400px;
-    font-size: 20px;
-}
-fieldset{
-    width: 100%;
-    margin-bottom: 1rem !important;
-}
-.modal-body__name,
-.modal-body__tel,
-.modal-body__site{
-    border: 1px solid #CDCDCD;
-    padding: 16px 24px;
-    font-size: 20px;
-    padding-right: 140px !important;
-}
-.modal__agree {
-    display: flex;
-}
-.modal__agree-text{
-    margin-left: 1rem;
-}
-.modal__footer{
-    border-top: none !important;
-    justify-content: center !important;
-    padding-bottom: 3rem !important;
-}
-.btn-send{
-    background-color: #FFCC19;
-    color: #262C59;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    border: 1px solid #FFCC19;
-    border-radius: 10px;
-    padding: 16px 4rem;
-    max-width: 450px;
-}
-
-
 @media (max-width: 1830px) {
     .main-image__pic{
         max-width: 600px;
@@ -321,10 +242,10 @@ fieldset{
     .main-content__buttons{
         margin-bottom: 60px;
     }
-    .main-content__button{
-        padding: 17px 25px;
-        font-size: 26px;
-    }
+    .main-content__button {
+        padding: 9px 55px;
+        font-size: 22px;
+    }    
     .main-content__client{
         font-size: 37px;
     }
@@ -355,6 +276,7 @@ fieldset{
         font-size: 18px;
         line-height: 30px;
         max-width: 620px;
+        margin-bottom: 40px;
     }
     .main-image__pic{
         max-width: 450px;
@@ -362,9 +284,10 @@ fieldset{
     .main-content__buttons{
         margin-bottom: 30px;
     }
-    .main-content__button{
-        padding: 12px 18px;
-        font-size: 20px;
+    .main-content__button {
+        padding: 10px 45px;
+        font-size: 17px;
+        line-height: 22px;
     }
     .main-content__client{
         font-size: 30px;
@@ -410,9 +333,10 @@ fieldset{
     .main-content__buttons{
         margin-bottom: 25px;
     }
-    .main-content__button{
-        padding: 12px 18px;
-        font-size: 20px;
+    .main-content__button {
+        padding: 10px 30px;
+        font-size: 18px;
+        line-height: 20px;
     }
     .main-content__client{
         font-size: 28px;
@@ -582,6 +506,9 @@ fieldset{
 
 
 @media (max-width: 770px) {
+    body{
+        overflow: scroll;
+    }
     .main__inner{
         flex-direction: column;
         align-items: flex-start;
@@ -631,9 +558,10 @@ fieldset{
         margin: 0 auto;
     }
     .main-content__button{
-        max-width: 100%;
-        padding: 1rem 8rem;
-        font-size: 30px;
+        min-width: 20em;
+        padding: 1.5rem 0rem;
+        font-size: 28px;
+        line-height: 30px;
     }
     .main-content__button-last{
         margin-left: 0px;
@@ -646,9 +574,6 @@ fieldset{
 
 
 @media (max-width: 670px) {
-    body{
-        overflow: scroll;
-    }
     .logo{
         margin-top: 30px;
     }
@@ -692,7 +617,6 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__button{
-        max-width: 100%;
         padding: 1rem 6rem;
         font-size: 24px;
     }
@@ -752,9 +676,9 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__button{
-        max-width: 100%;
-        padding: 1rem 4rem;
-        font-size: 24px;
+        min-width: 18em;
+        padding: 0.5rem 4rem;
+        font-size: 20px;
     }
     .main-content__button-last{
         margin-left: 0px;
@@ -832,7 +756,7 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__button{
-        max-width: 100%;
+        min-width: 21em;
         padding: 0.7rem 5rem;
         font-size: 18px;
     }
@@ -912,7 +836,7 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__button{
-        max-width: 100%;
+        min-width: 20em;
         padding: 0.6rem 4rem;
         font-size: 16px;
     }
@@ -989,9 +913,10 @@ fieldset{
         margin-bottom: 20px;
     }
     .main-content__button{
-        max-width: 100%;
+        min-width: 18em;
         padding: 0.5rem 3rem;
         font-size: 16px;
+        line-height: 22px;
     }
     .main-content__button-last{
         margin-left: 0px;
@@ -1000,7 +925,7 @@ fieldset{
     .main-content__clients{
         display: none;
     }
-    .modal__title{
+    /* .modal__title{
         font-size: 1rem !important;
     }
     .modal__header {
@@ -1033,6 +958,6 @@ fieldset{
     }
     .modal__footer {
         padding-bottom: 2rem !important;
-    }
+    } */
 
 }
