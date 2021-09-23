@@ -23,12 +23,14 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    max-width: 24em !important;
+    overflow-x: hidden;
   }
   
   @media (min-width: 576px) {
     .modal__content {
       max-width: 500px;
-      margin: 50px auto;
+      margin: 10em auto;
     }
   }
   
@@ -44,28 +46,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
+    padding: 20px 20px 0 20px;
+    position: relative;
   }
   
   .modal__title {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   
   .modal__btn-close {
     float: right;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
     text-decoration: none;
+    position: absolute;
+    top: 0px;
+    right: 5px;
   }
   
   .modal__btn-close:focus,
@@ -79,16 +84,72 @@
   .modal__body {
     position: relative;
     flex: 1 1 auto;
-    padding: 15px;
+    padding: 20px;
     overflow: auto;
   }
   
+  .modal-body__title {
+    margin-bottom: 1rem;
+    line-height: 22px;
+    font-weight: 600;
+    color: #4f4f4f;
+    font-size: 1.1rem;
+  }
+
+  fieldset {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid #a8abad;
+    width: 100%;
+    overflow: hidden;
+    color: #272829;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  input::placeholder {
+    font-size: .85rem;
+    color: #a8abad;
+  }
+
   .modal__footer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 1rem;
-    border-top: 1px solid #e9ecef;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
     border-bottom-right-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
+  }
+
+  .btn-send {
+    border: none;
+    background-color: #ffcc19;
+    color: #262c59;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: .8rem;
+    width: 100%;
+  }
+
+  .modal__agree {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    width: 15px;
+    height: 15px;
+  }
+
+  .modal__agree-text {
+    font-size: .9rem;
+    color: #5a5b5c;
   }

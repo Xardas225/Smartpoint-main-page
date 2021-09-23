@@ -1,3 +1,6 @@
+
+
+
 let parent = document.querySelector('.main-content');
 let title = document.querySelector('.main-content__title');
 let image = document.querySelector('.main-image');
@@ -14,6 +17,3 @@ if (window.innerWidth < 500) {
 
 
 
-// document.querySelector('.main-content__button-yellow').addEventListener('click', () => {
-//     smp_active_205644();
-// });
