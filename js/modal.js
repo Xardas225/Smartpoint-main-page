@@ -103,6 +103,7 @@ var modal = $modal({
 
 
 $('.btn-send').prop('type', 'submit');
+$('.btn-send').attr('data-toggle', 'modal');
 
 
 let modalButton = document.querySelector('.main-content__button-yellow');
@@ -119,7 +120,8 @@ $('#form').submit(function () {
 
         function (msg) { // получен ответ сервера  
             $('#form').hide('slow');
-            $('#my_message').html(msg);          
+            $('#my_message').html(msg);
+            modal.show();
         }
     );
 
