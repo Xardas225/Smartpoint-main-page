@@ -1,25 +1,9 @@
 <?php
-	
-    if (!$_POST) exit('No direct script access allowed');
- 
-if (!isset($_POST['f'])) exit('No direct script access allowed');
-if (!isset($_POST['f']['name'])) exit('No direct script access allowed');
-if (!isset($_POST['f']['phone'])) exit('No direct script access allowed');
-if (!isset($_POST['f']['email'])) exit('No direct script access allowed');
- 
+
+
 $email = trim(strip_tags($_POST['f']['email']));
 $name = trim(strip_tags($_POST['f']['name']));
 $phone = trim(strip_tags($_POST['f']['phone']));
- 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-{
-	exit('Неверный email! Обновите страницу (F5) и укажите правильный адрес');
-}
- 
-if (!$name)
-{
-	exit('Не указано имя! Обновите страницу (F5) и укажите своё имя');
-}
  
  
 $to = 'alexanderderevkov@yandex.ru'; // адрес получателя
