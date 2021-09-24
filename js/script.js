@@ -22,7 +22,21 @@ im.mask(selector);
 
 
 $('#form').validate({
-    rules: {
+    submitHandler: function (form) 
+    {
+        $.post(
+            'sendmail.php', // адрес обработчика
+            $("#form").serialize(), // отправляемые данные  		
+
+            function (msg) { // получен ответ сервера                  
+                $('#form').hide('slow');
+                $('#my_message').html(msg);
+                modal.hide();
+            }
+        );
+    },
+    rules: 
+    {
         'f[email]': {
             required: true,
             email: true,
@@ -31,9 +45,19 @@ $('#form').validate({
             required: true,
             minlength: 3
         },
-        'f[tel]': {
+        'f[phone]': {
             required: true
-        }   
+        },
+    },
+    messages: 
+    {
+        'f[name]': "Пожалуйста, введите имя",
+        'f[phone]': "Пожалуйста, введите телефон",
+        'f[email]': {
+            required: "Пожалуйста, введите email",
+            email: "Вам email-адрес должен быть в формате name@domain.com"
+        }
     }
-}); 
+
+});
 
