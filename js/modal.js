@@ -96,8 +96,10 @@ $modal = function (options) {
 
 (function () {
     let modalButton = document.querySelector('.main-content__button-yellow');
+    // let submitButton = document.querySelector('.btn-send');
 
 
+    
     var modal = $modal({
         title: 'Попробовать бесплатно',
         content: '<p class="modal-body__title">Заполните форму, мы перезвоним вам и вместе запустим пилотный проект на вашем сайте</p> <fieldset><input placeholder="Имя*" id="name" type="text" name="f[name]" class="modal-body__name"></input></fieldset><fieldset><input placeholder="Телефон*" id="tel" type="tel" name="f[phone]" class="modal-body__tel"></input></fieldset><fieldset><input placeholder="Email*" name="f[email]" id="site" type="text" class="modal-body__site"></input></fieldset><div class="modal__agree"><input type="checkbox" name="agree" id="agree" checked="checked"></input><label class="modal__agree-text">Оставляя свои персональные данные, Вы даёте добровольное согласие на их обработку*</label></div>',
@@ -105,6 +107,7 @@ $modal = function (options) {
             { class: 'btn-send', text: 'Оставить бесплатную заявку', handler: 'modalHandlerOk', type: 'submit' }
         ]
     });
+
 
 
     var modalAfterSubmit = $modal({
@@ -116,6 +119,9 @@ $modal = function (options) {
     $('.btn-send').attr('data-toggle', 'modal');
 
 
+    // submitButton.addEventListener('click', () => {
+    //     modalAfterSubmit.show();
+    // });
 
     modalButton.addEventListener('click', () => {
         modal.show();
