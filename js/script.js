@@ -65,39 +65,38 @@ $('#form').validate({
 
 // Счетчик лидов
 
-(function leadCounter(leads, leadCountElement) {
-    const time = 60000;
-    const step = 1; 
+// (function leadCounter(leads, leadCountElement) {
+//     const time = 60000;
+//     const step = 1; 
 
-    let element = document.querySelector('#'+leadCountElement);
-    numLead = 2500;
-    let t = Math.round(time/(leads/step));
-    let interval = setInterval(() => {
-        numLead = numLead + step;
-        if(numLead == leads) {
-            clearInterval(interval);
-        }
-        element.innerHTML = numLead;
-    },
-    t);
-})(2548, 'leadCount');
+//     let element = document.querySelector('#'+leadCountElement);
+//     numLead = 2500;
+//     let t = Math.round(time/(leads/step));
+//     let interval = setInterval(() => {
+//         numLead = numLead + step;
+//         if(numLead == leads) {
+//             clearInterval(interval);    
+//         } 
+//         element.innerHTML = numLead;
+//     },t)
+// })(2548, 'leadCount');
 
 
 // Счетчик клиентов
 
-(function clientCounter(num, elem) {
-    const time = 60000;
-    const step = 1;
+// (function clientCounter(num, elem) {
+//     const time = 60000;
+//     const step = 1;
 
-    let el = document.querySelector('#'+elem);
-    n = 530;
-    let t = Math.round(time/(num/step));
-    let interval = setInterval(() => {
-        n = n + step;
-        if(n == num) {
-            clearInterval(interval);
-        }
-        el.innerHTML = n;
-    },
-    t);
-})(539, 'clientCount');
+//     let el = document.querySelector('#'+elem);
+//     n = 530;
+//     let t = Math.round(time/(num/step));
+//     let interval = setInterval(() => {
+//         n = n + step;
+//         if(n == num) {
+//             clearInterval(interval);
+//         }
+//         el.innerHTML = n;
+//     },
+//     t);
+// })(539, 'clientCount');

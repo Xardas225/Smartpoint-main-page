@@ -96,6 +96,7 @@ body{
     padding: 20px 70px;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 @keyframes moving {
     0%{
