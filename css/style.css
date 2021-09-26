@@ -58,15 +58,11 @@ body{
     color: #fff;
     font-style: normal;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 68px;
     line-height: 80px;
     margin-bottom: 22px;
     letter-spacing: 1px;
 }
-
-/* .main-content__title > b{
-    color: #F43362;
-} */
 
 .main-content__text{
     font-family: "Proxima Nova Lt";

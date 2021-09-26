@@ -248,7 +248,7 @@ var CountUp = /** @class */ (function () {
 export { CountUp };
 
 
-const leadCounter = new CountUp('leadCount', 5248);
+const leadCounter = new CountUp('leadCount', 25248);
 if (!leadCounter.error) {
     leadCounter.start();
 } else {
