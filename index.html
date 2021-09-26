@@ -8,6 +8,8 @@
     <title>Smartpoint для повышения конверсии сайта</title>
     <meta name="description"
         content="Сервис готовых интерактивных решений для повышения конверсии онлайн трафика в потенциальных клиентов">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="icon" href="./images/LOGO.png">
@@ -74,17 +76,19 @@
                         взаимодействию с
                         посетителями вашего сайта.<br />
                         Протестируйте 10 дней и убедитесь лично в эффективности сервиса
-                        <div id="my_message"></div>
                     </p>
                     <div class="main-content__buttons">
                         <a href="#">
-                            <button class="main-content__button main-content__button-yellow" data-toggle="modalAfterSubmit" type="button" onclick="yaCounter34870485.reachGoal('smartpoint')">Запустить
+                            <button class="main-content__button main-content__button-yellow"
+                                data-toggle="modalAfterSubmit" type="button"
+                                onclick="yaCounter34870485.reachGoal('smartpoint')">Запустить
                                 пилотный<br /> проект бесплатно</button>
                         </a>
 
                         <a href="/docs/smartpoint.pdf" target="_blank">
-                            <button class="main-content__button main-content__button-last" type="submit" onclick="yaCounter34870485.reachGoal('presentation')">Скачать
-                                презентацию<br/> с описанием и выгодами</button>
+                            <button class="main-content__button main-content__button-last" type="submit"
+                                onclick="yaCounter34870485.reachGoal('presentation')">Скачать
+                                презентацию<br /> с описанием и выгодами</button>
                         </a>
 
                     </div>
@@ -106,6 +110,48 @@
         </div>
     </main>
 
+    <!-- Модальное окно при закрытии -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Попробовать бесплатно</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="form">
+                    <div class="modal-body">
+                        <p class="modal-body__title">
+                            Заполните форму, мы перезвоним вам и вместе запустим пилотный проект на вашем сайте
+                        </p>
+                        <fieldset>
+                            <input placeholder="Имя*" id="name" type="text" name="f[name]" class="modal-body__name">
+                            </input>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Телефон*" id="tel" type="tel" name="f[phone]"
+                                class="modal-body__tel"></input>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Email*" name="f[email]" id="site" type="text"
+                                class="modal-body__site"></input>
+                        </fieldset>
+                        <div class="modal__agree">
+                            <input type="checkbox" name="f[checkbox]" id="agree" checked="checked"></input>
+                            <label class="modal__agree-text" for="agree">
+                                Оставляя свои персональные
+                                данные, Вы даёте добровольное согласие на их обработку*
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-send btn-primary">Хочу попробовать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Smartpoint Code Start -->
     <script type="text/javascript">
         (function (w, p) {
@@ -122,9 +168,11 @@
     <!-- Smartpoint Code End -->
     <script src="./js/jquery.js"></script>
     <script src="./js/inputmask.min.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script type="module" src="./js/countUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 

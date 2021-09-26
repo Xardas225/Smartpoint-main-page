@@ -40,6 +40,6 @@ $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
 // отправка
 @mail($to, $subject, $message, $headers);
  
-echo 'Спасибо, ваше сообщение отправлено!';
+echo 'Спасибо за обращение!';
 
 ?>
