@@ -18,19 +18,19 @@
 // 	exit('Не указано имя!');
 // }
 
-$email = trim(strip_tags($_POST['f']['email']));
+// $email = trim(strip_tags($_POST['f']['email']));
 $name = trim(strip_tags($_POST['f']['name']));
 $phone = trim(strip_tags($_POST['f']['phone']));
  
  
-$to = 'al@smartpoint.pro, dt@smartpoint.pro, perffectto@gmail.com, aleksandr.derevkov@smartpoint.pro  '; // адрес получателя
-$subject = 'Заявка с сайта Smartpoint.pro'; // тема письма
+$to = "dt@smartpoint.pro,ab@smartpoint.pro,perffectto@gmail.com,aleksandr.derevkov@smartpoint.pro"; // адрес получателя
+$subject = 'Заявка с сайта smartpoint.pro'; // тема письма
  
 // формируем тело сообщения
-$message = 'Имя: ' . $name . "\r\n" . 'Email: ' . $email. "\r\n" . 'Телефон:' .$phone; 
+$message = 'Имя: ' . $name . "\r\n" . 'Телефон: ' .$phone; 
  
 // формируем headers для письма
-$headers = 'From: '. 'leads@smartpoint.pro' . "\r\n"; // от кого
+$headers = 'From: noreply@smartpoint.pro' . "\r\n"; // от кого
  
 // кодируем заголовок в UTF-8
 $subject = preg_replace("/(\r\n)|(\r)|(\n)/", "", $subject);

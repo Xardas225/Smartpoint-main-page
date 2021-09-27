@@ -54,10 +54,10 @@ $('#form').validate({
     },
     rules: 
     {
-        'f[email]': {
-            required: true,
-            email: true,
-        },
+        // 'f[email]': {
+        //     required: true,
+        //     email: true,
+        // },
         'f[name]': {
             required: true,
             minlength: 3
@@ -65,18 +65,18 @@ $('#form').validate({
         'f[phone]': {
             required: true
         },
-        'f[checkbox]': {
-            required: true
-        }
+        // 'f[checkbox]': {
+        //     required: true
+        // }
     },
     messages: 
     {
         'f[name]': "Пожалуйста, введите имя",
         'f[phone]': "Пожалуйста, введите телефон",
-        'f[email]': {
-            required: "Пожалуйста, введите email",
-            email: "Вам email-адрес должен быть в формате name@domain.com"
-        },
+        // 'f[email]': {
+        //     required: "Пожалуйста, введите email",
+        //     email: "Вам email-адрес должен быть в формате name@domain.com"
+        // },
     }
 
 });
